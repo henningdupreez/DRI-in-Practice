@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DRI in Practice — v1.0</title>
+  <meta name="description" content="Practical examples of applying the Delegation Readiness Index (DRI) to real delegation decisions." />
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; line-height: 1.6; margin: 0; }
+    main { max-width: 980px; margin: 0 auto; padding: 48px 20px; }
+    h1 { margin: 0 0 8px 0; font-size: 34px; letter-spacing: -0.02em; }
+    .meta { color: #555; margin: 0 0 26px 0; }
+    h2 { margin-top: 34px; font-size: 22px; }
+    h3 { margin-top: 20px; font-size: 17px; }
+    p, li { font-size: 16px; }
+    .card { border: 1px solid #e6e6e6; border-radius: 14px; padding: 18px 18px; background: #fcfcfc; margin: 14px 0; }
+    .rule { border-left: 4px solid #ddd; padding: 10px 14px; background: #fafafa; border-radius: 10px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    .pill { display: inline-block; padding: 3px 10px; border-radius: 999px; border: 1px solid #e1e1e1; background: #fff; font-size: 13px; color: #444; }
+    .verdict { font-weight: 700; }
+    .ok { }
+    .no { }
+    .muted { color: #666; }
+    .small { font-size: 14px; color: #555; }
+    code { background: #f4f4f4; padding: 2px 6px; border-radius: 6px; }
+    a { color: inherit; }
+    footer { margin-top: 46px; padding-top: 16px; border-top: 1px solid #eee; color: #666; font-size: 14px; }
+    .toc a { text-decoration: none; border-bottom: 1px dotted #aaa; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>DRI in Practice — v1.0</h1>
+    <p class="meta">A practical companion to The Delegation Law and the Delegation Readiness Index (DRI) · Written by Henning du Preez, 2025 · Licensed under CC BY 4.0</p>
+
+    <h2>What this page is</h2>
+    <p>
+      This page shows how to apply the <strong>Delegation Readiness Index (DRI)</strong> to real delegation decisions using a few grounded examples.
+      It is designed to be calm, concrete, and usable — especially when the decision feels urgent.
+    </p>
+    <p>
+      DRI is not here to “slow you down.” It is here to help you move fast <em>without</em> quietly weakening the system you are responsible for.
+    </p>
+
+    <h2>How to use DRI (in one minute)</h2>
+    <div class="rule">
+      <p><strong>DRI checks three things — in order.</strong></p>
+      <ol>
+        <li><strong>Structural Alignment</strong>: Are we removing the real constraint, or just automating around it?</li>
+        <li><strong>Propagation Stability</strong>: As reliance spreads, do outcomes remain sound?</li>
+        <li><strong>System Integrity</strong>: If it’s wrong, misused, or attacked — can the system recover cleanly?</li>
+      </ol>
+      <p class="small"><strong>Rule:</strong> If any dimension fails, delegation is structurally premature. Strength in one cannot “cover” weakness in another.</p>
+    </div>
+
+    <h2>Onboarding: what the examples will (and won’t) do</h2>
+    <p>
+      Each example below is intentionally short.
+      It does not try to convince you of a worldview.
+      It simply shows how DRI makes the decision <em>decidable</em>.
+    </p>
+    <p class="muted">
+      Tip: When reading, notice how often the failure mode is not “the system isn’t smart enough,” but “the rule is not finished,”
+      or “the recovery path is not real.”
+    </p>
+
+    <h2>Examples included on this page</h2>
+    <div class="card toc">
+      <ul>
+        <li><a href="#ex6">Example 6</a> — Scheduling that works small, then weakens the system at scale</li>
+        <li><a href="#ex7">Example 7</a> — Delegating company strategy (a category error)</li>
+        <li><a href="#ex8">Example 8</a> — Narrow, rule-bound defensive automation (delegable within strict bounds)</li>
+        <li><a href="#ex9">Example 9</a> — Delegating cultural norm enforcement (unstable rules and poor recovery)</li>
+      </ul>
+    </div>
+
+    <!-- ====================================================== -->
+    <!-- Example 6 -->
+    <!-- ====================================================== -->
+    <h2 id="ex6">Example 6 — Works Small, Weakens the System at Scale</h2>
+    <div class="card">
+      <p><span class="pill">Operations</span> <span class="pill">Scheduling</span> <span class="pill">Scale effects</span></p>
+
+      <h3>Delegation Candidate</h3>
+      <p>Using an AI system to automatically schedule customer service agents (shifts, breaks, and coverage) based on demand forecasts.</p>
+
+      <h3>Context</h3>
+      <p>
+        A small team adopts automated scheduling to reduce manager workload and keep coverage aligned to expected demand.
+        Early results look good. Reliance grows.
+      </p>
+
+      <h3>1) Structural Alignment</h3>
+      <ul>
+        <li><strong>What it removes:</strong> manual scheduling effort and delays</li>
+        <li><strong>What remains:</strong> the business rules for coverage are reasonably clear</li>
+      </ul>
+      <p class="verdict">Verdict: Holds</p>
+
+      <h3>2) Propagation Stability</h3>
+      <ul>
+        <li>As the team grows, edge cases multiply (fatigue, fairness, skill mix, training time, personal constraints).</li>
+        <li>The system optimises “coverage,” but important human signals can be treated as noise.</li>
+        <li>Over time, people stop raising issues because “the system decided.”</li>
+      </ul>
+      <p class="verdict">Verdict: Marginal</p>
+
+      <h3>3) System Integrity</h3>
+      <ul>
+        <li>Bad schedules often show up late (burnout, morale decay, resignations).</li>
+        <li>Accountability can blur (“Who approved this schedule?”).</li>
+        <li>Recovery is possible, but usually after cost has already been paid.</li>
+      </ul>
+      <p class="verdict">Verdict: Fails</p>
+
+      <h3>Final DRI Verdict</h3>
+      <p class="verdict">Not delegable at scale</p>
+      <p class="muted">
+        The delegation removes effort, but it can quietly erode responsibility and recovery.
+        A safer path is to keep the automation narrow (suggestions + human sign-off), and treat “recovery time” as a first-class metric.
+      </p>
+    </div>
+
+    <!-- ====================================================== -->
+    <!-- Example 7 -->
+    <!-- ====================================================== -->
+    <h2 id="ex7">Example 7 — Delegating Company Strategy</h2>
+    <div class="card">
+      <p><span class="pill">Leadership</span> <span class="pill">Strategy</span> <span class="pill">Judgment</span></p>
+
+      <h3>Delegation Candidate</h3>
+      <p>Letting an AI system define company strategy based on market data, trends, and simulations.</p>
+
+      <h3>Context</h3>
+      <p>
+        A leadership team wants to reduce bias and speed up decision-making.
+        They propose “data-driven strategy” where the system selects markets, positioning, and priorities.
+      </p>
+
+      <h3>1) Structural Alignment</h3>
+      <ul>
+        <li><strong>The real limitation:</strong> uncertainty about the future, not lack of information.</li>
+        <li><strong>The missing prerequisite:</strong> a stable rule that defines what “correct strategy” is.</li>
+        <li><strong>What strategy actually does:</strong> it commits the organisation to a chosen future under uncertainty.</li>
+      </ul>
+      <p class="verdict">Verdict: Fails</p>
+
+      <h3>2) Propagation Stability</h3>
+      <p class="muted">Not evaluated — Structural Alignment failure halts delegation.</p>
+
+      <h3>3) System Integrity</h3>
+      <p class="muted">Not evaluated — Structural Alignment failure halts delegation.</p>
+
+      <h3>Final DRI Verdict</h3>
+      <p class="verdict">Structurally premature</p>
+      <p class="muted">
+        The safer use of machine intelligence here is <em>support</em>, not delegation:
+        improve visibility, model scenarios, and surface second-order consequences — while humans remain accountable for the strategic commitment.
+      </p>
+    </div>
+
+    <!-- ====================================================== -->
+    <!-- Example 8 -->
+    <!-- ====================================================== -->
+    <h2 id="ex8">Example 8 — Narrow, Rule-Bound Defensive Automation</h2>
+    <div class="card">
+      <p><span class="pill">Defense</span> <span class="pill">Reaction time</span> <span class="pill">Strict scope</span></p>
+
+      <h3>Delegation Candidate</h3>
+      <p>Automatically triggering a defensive intercept when an incoming projectile meets a strictly defined threat profile.</p>
+
+      <h3>Context</h3>
+      <p>
+        Human reaction time is insufficient to respond safely.
+        The system is designed to operate in a narrow, well-defined envelope with explicit constraints.
+      </p>
+
+      <h3>1) Structural Alignment</h3>
+      <ul>
+        <li><strong>What it removes:</strong> reaction-speed limitation</li>
+        <li><strong>What remains human:</strong> rule definition, scope, oversight, and accountability</li>
+        <li><strong>Key property:</strong> the system executes a fixed rule, it does not invent one</li>
+      </ul>
+      <p class="verdict">Verdict: Holds</p>
+
+      <h3>2) Propagation Stability</h3>
+      <ul>
+        <li>Scaling increases consistency, not ambiguity.</li>
+        <li>Misuse is constrained by the system’s strict operating envelope.</li>
+        <li>The rule does not drift simply because adoption increases.</li>
+      </ul>
+      <p class="verdict">Verdict: Holds</p>
+
+      <h3>3) System Integrity</h3>
+      <ul>
+        <li>Actions are logged, attributable, and auditable.</li>
+        <li>There are clear disable mechanisms and safe modes.</li>
+        <li>Scope is narrow enough that failure does not “spill” into unrelated domains.</li>
+      </ul>
+      <p class="verdict">Verdict: Holds (within strict bounds)</p>
+
+      <h3>Final DRI Verdict</h3>
+      <p class="verdict">Delegable — within a narrowly defined scope</p>
+      <p class="muted">
+        This example is included to show a non-obvious point:
+        delegation can be structurally safe when the rule is explicit, the scope is tight, and recovery is real — even in serious domains.
+      </p>
+    </div>
+
+    <!-- ====================================================== -->
+    <!-- Example 9 -->
+    <!-- ====================================================== -->
+    <h2 id="ex9">Example 9 — Delegating Cultural Norm Enforcement</h2>
+    <div class="card">
+      <p><span class="pill">Society</span> <span class="pill">Norms</span> <span class="pill">Rule drift</span></p>
+
+      <h3>Delegation Candidate</h3>
+      <p>Using AI to automatically detect and enforce “acceptable speech” or “approved behaviour” across a platform or society.</p>
+
+      <h3>Context</h3>
+      <p>
+        The intention is often understandable: reduce harm, reduce conflict, and keep environments usable.
+        The challenge is that norms are not static — they evolve across communities and time.
+      </p>
+
+      <h3>1) Structural Alignment</h3>
+      <ul>
+        <li><strong>The real limitation:</strong> ongoing disagreement about values and meaning, not enforcement capacity.</li>
+        <li><strong>The missing prerequisite:</strong> a stable rule that stays legitimate across contexts.</li>
+        <li><strong>Risk shape:</strong> the enforcement system effectively becomes a rule-maker.</li>
+      </ul>
+      <p class="verdict">Verdict: Fails</p>
+
+      <h3>2) Propagation Stability</h3>
+      <p class="muted">Not evaluated — Structural Alignment failure halts delegation.</p>
+
+      <h3>3) System Integrity</h3>
+      <p class="muted">Not evaluated — Structural Alignment failure halts delegation.</p>
+
+      <h3>Final DRI Verdict</h3>
+      <p class="verdict">Structurally premature</p>
+      <p class="muted">
+        A safer approach is governance-by-visibility: make rules explicit, allow appeal, preserve accountability,
+        and keep humans responsible for the rule — even if machines assist with detection and routing.
+      </p>
+    </div>
+
+    <h2>Closing</h2>
+    <p>
+      The practical lesson across these examples is simple:
+      <strong>delegation becomes safe when the rule is finished, the scope is bounded, and recovery is real.</strong>
+    </p>
+    <p>
+      When those conditions are missing, the most constructive move is usually not “no forever,” but “not yet” —
+      and then define what must become true to make delegation ready.
+    </p>
+
+    <h2 id="comments">Comments</h2>
+    <div class="card">
+      <h3>Why these four examples were chosen</h3>
+      <ul>
+        <li><strong>Example 6</strong> shows a common pattern: “looks great early” → “quiet costs later.” This is the signature of weak System Integrity.</li>
+        <li><strong>Example 7</strong> shows a category mistake: delegating commitment under uncertainty when no stable rule exists.</li>
+        <li><strong>Example 8</strong> shows that seriousness of domain is not the deciding factor. Structure is.</li>
+        <li><strong>Example 9</strong> shows where rule drift and legitimacy issues make “automation” functionally become “rule-making.”</li>
+      </ul>
+
+      <h3>Reader safety and tone (intentional)</h3>
+      <p class="muted">
+        This page is written to keep the reader safe to think.
+        It avoids urgency language and avoids framing the reader as “at risk” for asking the question.
+        DRI is a decision aid, not a moral judgment.
+      </p>
+
+      <h3>How to extend this page without dilution</h3>
+      <ul>
+        <li>Add more examples only if each one fails or passes for a single clear structural reason.</li>
+        <li>Keep the same three-step structure (Alignment → Stability → Integrity) to prevent drift.</li>
+        <li>If an example becomes debatable, tighten the scope rather than adding more words.</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p><strong>Related:</strong></p>
+      <ul>
+        <li><a href="https://henningdupreez.github.io/The-Delegation-Law/">The Delegation Law</a></li>
+        <li><a href="https://henningdupreez.github.io/The-Delegation-Readiness-Index-DRI/">The Delegation Readiness Index (DRI)</a></li>
+      </ul>
+      <p class="small">Suggested citation: du Preez, H. (2025). <em>DRI in Practice — v1.0</em>. GitHub Pages.</p>
+    </footer>
+  </main>
+</body>
+</html>
